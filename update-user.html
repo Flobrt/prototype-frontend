@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThumbnaiIA</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" /> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!-- <nav class="navbar navbar-expand-md fixed-top navbar-light p-3" style="background-color: rgb(0, 0, 0, 0);">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand fw-bold text-light">Thumbnai
+                    <span class="bg-danger bg-gradiant p-1 ms-0">IA</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color:white">
+                    <span class="bi bi-list" onClick="Masquer()"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="new_picture.html" class="nav-link text-light mt-3 mb-3 me-md-2" id="link_connect">Nouvelle Image</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link text-light btn btn-danger mt-3 w-100">Déconnexion</a>
+                        </li>
+                    </ul>
+                </div>                
+            </div>
+        </nav> -->
+        <nav class="navbar navbar-expand-md fixed-top navbar-light p-3" style="background-color: rgb(0, 0, 0, 0);">
+          <div class="container-fluid">
+                <a href="index.html" class="navbar-brand fw-bold text-light">Thumbnail<span class="bg-danger bg-gradiant p-1 ms-0">IA</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation" style="color:white">
+                    <span class="bi bi-list"></span>
+                </button>
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="navbarOffcanvas" style="height: 150px; background-color:rgb(0, 0, 0, 0)">
+                    <div class="offcanvas-header d-flex justify-content-end">
+                        <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="profil.html" class="link-hover nav-link text-light me-md-2">Mes images</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-light btn btn-danger w-100">Déconnexion</a>
+                    </li>
+                    </ul>
+                </div>
+              </div>
+              <div class="collapse navbar-collapse justify-content-end d-none d-md-block" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="profil.html" class="link-hover nav-link text-light me-2">Mes images</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-light btn btn-danger">Déconnexion</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+      </nav>
+    </header>
+
+    <main>
+        <section id="profil_photo" class="bg-image p-5" style="background-image: url('img/bg-hd.jpg');min-height: 100vh; width: 100%; display: block;">
+            <!-- <div class="container w-50 mt-5 p-4 " style="background-color: #144156; border-radius: 15px;">
+            <div class="form-group fw-bold text-light">
+                <input type="Newimage" class="form-control mt-1" id="promptnewimage" placeholder="Fond d'ecran drole, visage terrifié">
+            </div>
+            <button type="submit" class="btn btn-danger w-100">Submit</button>
+            </div> -->
+            <div class="container  position-absolute p-4 top-50 start-50 translate-middle w-100 w-lg-50 mt-3 p-4">
+            <!-- <div class="container w-50 mt-5 p-4" style="background-color: #144156; border-radius: 15px;"> -->
+                <!-- <div class="row">
+                    <div class="col-12 mb-4" id="avatar-user" style="display: flex; justify-content: center; align-items: center;">
+                        <a href="update-user.html" class="link_user" style="background-image: URL(https://picsum.photos/300/150?random=25); cursor: default"></a>
+                        <input type="file" class="link_user" style="background-image: URL(https://picsum.photos/300/150?random=25); cursor: default;"></a>
+                    </div>
+                </div> -->
+                <div class="row">
+                    <div class="col-12 mb-4 d-flex justify-content-center" id="avatar-user">
+                      <!-- <a href="update-user.html" class="link_user" style="background-image: URL(https://picsum.photos/300/150?random=25); cursor: default"></a> -->
+                      <label for="file-input" class="link_user" style="background-image: URL(https://picsum.photos/300/150?random=25); cursor: default;"></label>
+                      <input id="file-input" type="file" class="custom-file-input" accept="image/*" style="visibility: hidden; position: absolute;">
+                    </div>
+                </div>
+                <div class="row d-flex p-4">
+                    <div class="col-12 col-xl-4">
+                        <h2 style="color:white;">Mes Informations :</h2>
+                    </div>
+                    <div class="col-12 col-xl-8" style="justify-content: center; align-items: center;">
+                        <form>
+                        <!-- <form class="position-absolute p-4 top-50 start-50 translate-middle w-50" style="background-color: #144156; border-radius: 15px;"> -->
+                            <div class="form-group fw-bold mb-4 text-light">
+                                <input type="text" class="form-control mt-1" id="Name" placeholder="Nom">
+                            </div>
+                            <div class="form-group fw-bold mb-4 text-light">
+                                <input type="mail" class="form-control mt-1" id="Mail" placeholder="Mail">
+                            </div>
+                            <div class="form-group fw-bold mb-4 text-light">
+                                <input type="password" class="form-control mt-1" id="Motdepasse" placeholder="Mot de passe">
+                            </div>
+                            <div class="form-group fw-bold mb-4 text-light">
+                                <input type="password" class="form-control mt-1" id="confirmMotdepasse" placeholder="Confirmer le mot de passe">
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <!-- temporaire -->
+                                <button type="submit" class="btn btn-danger me-2">Modifier</button>
+                                <!-- <button type="submit" class="btn btn-danger me-2">Générer</button> -->
+                                <button class ="my-button mt-2 ms-2" id="add_picture" onClick="" syle="display:block; ">Supprimer le compte</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-top">
+        <div class="container-fluid py-2">
+            <div class="row gy-4 align-items-center">
+                <div class="col-12 col-md-4">
+                    <a href="index.html" class="navbar-brand fw-bold text-dark">Thumbnai
+                        <span class="bg-danger bg-gradiant p-1 ms-0 text-light">IA</span>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 text-md-center">
+                <ul class="list-unstyled mb-0">
+                    <li>
+                    <a href="#" class="text-decoration-none text-dark">Mentions légales</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="col-12 col-md-4 text-md-end">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item">
+                    <a href="#" class="text-decoration-none text-dark"><i class="bi bi-linkedin"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                    <a href="#" class="text-decoration-none text-dark"><i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                    <a href="#" class="text-decoration-none text-dark"><i class="bi bi-twitter"></i></a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous">
+        </script>
+        <script>
+        document.querySelectorAll('img').forEach(image =>{
+            image.onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+        });
+
+        document.querySelector('.popup-image span').onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'none';
+        };
+        </script>
+    </footer>
+
+</body>
+
+</html>

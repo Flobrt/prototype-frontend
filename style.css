@@ -1,0 +1,190 @@
+.bg-danger {
+  border-radius: 5px;
+}
+
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: none;
+}
+
+/* .img-fluid:hover {
+  -webkit-filter: blur(3px);
+} */
+
+#add_picture {
+  text-decoration: none;
+  color: white;
+}
+
+#add_picture:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.img-fluid {
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+  transition: .3s ease;
+}
+
+.picperso:hover {
+  transform: scale(1.05);
+  filter: brightness(50%);
+}
+/* .with_picture {
+  display: none;
+}
+
+#add_picture:checked ~ .with_picture {
+  display: flex;
+} */
+
+.rendu1, .rendu2, .rendu3, .rendu4 {
+  transition: .5s ease;
+  border-radius: 5px;
+}
+
+.download1, .download2, .download3, .download4 {
+  opacity: 0;
+  transition: 0.5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-container1, .image-container2, .image-container3, .image-container4 {
+  position: relative;
+}
+
+.image-container1:hover .rendu1 {
+  filter: brightness(30%);
+  transform: scale(1.05);
+}
+
+.image-container1:hover .download1{
+  opacity: 1;
+}
+
+.image-container2:hover .rendu2 {
+  filter: brightness(30%);
+  transform: scale(1.05);
+}
+
+.image-container2:hover .download2{
+  opacity: 1;
+}
+
+.image-container3:hover .rendu3 {
+  filter: brightness(30%);
+  transform: scale(1.05);
+}
+
+.image-container3:hover .download3{
+  opacity: 1;
+}
+
+.image-container4:hover .rendu4 {
+  filter: brightness(30%);
+  transform: scale(1.05);
+}
+
+.image-container4:hover .download4{
+  opacity: 1;
+}
+
+.popup-image {
+  position: fixed;
+  top: 0;left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.popup-image span {
+  position: absolute;
+  top:50px;
+  right: 10px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  z-index: 100;
+}
+ .popup-image img {
+  border-radius: 5px;
+  width: 80vh;
+  position:absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+ }
+
+ @media (max-width:768px){
+  .container .popup-image img{
+    width: 95%;
+  }
+ }
+
+ .link_user {
+  display: block;
+  padding: 15px;
+  border-radius: 50%;
+  margin: 20px;
+  height: 120px;
+  width: 120px;
+  /* border: solid 1px black; */
+  border-width: 2px;
+  border-style: outset;
+  border-color:currentColor;
+  border-image: initial;
+  transition: 0.5s;
+  
+  appearance: button;
+  background-size: cover;
+}
+
+.link_user:hover {
+  filter: brightness(80%);
+  transform: scale(1.2);
+}
+
+#link_connect:hover {
+  opacity: 0.7;
+}
+
+.link-hover:hover {
+  opacity: 0.7;
+}
+
+.my-button {
+  /* Réinitialiser la couleur de fond */
+  background-color: transparent;
+  
+  /* Réinitialiser les bordures */
+  border: none;
+  
+  /* Réinitialiser les marges et les rembourrages */
+  margin: 0;
+  padding: 0;
+  
+  /* Réinitialiser les styles de texte */
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  
+  /* Réinitialiser les styles de curseur */
+  cursor: pointer;
+}
+
+.center-picture {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}

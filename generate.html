@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThumbnaiIA</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" /> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="">
+        <!-- <nav class="navbar navbar-expand-md fixed-top navbar-light p-3" style="background-color: rgb(0, 0, 0, 0);">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand fw-bold text-light">Thumbnai
+                    <span class="bg-danger bg-gradiant p-1 ms-0">IA</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color:white">
+                    <span class="bi bi-list" onclick="Masquer()"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="profil.html" class="nav-link text-light me-2">Mes images</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link text-light btn btn-danger">Déconnexion</a>
+                        </li>
+                    </ul>
+                </div>                
+            </div>
+        </nav> -->
+        <nav class="navbar navbar-expand-md fixed-top navbar-light p-3" style="background-color: rgb(0, 0, 0, 0);">
+          <div class="container-fluid">
+              <a href="index.html" class="navbar-brand fw-bold text-light">Thumbnail<span class="bg-danger bg-gradiant p-1 ms-0">IA</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation" style="color:white">
+                  <span class="bi bi-list"></span>
+              </button>
+              <div class="offcanvas offcanvas-top" tabindex="-1" id="navbarOffcanvas" style="height: 150px; background-color:rgb(0, 0, 0, 0)">
+                  <div class="offcanvas-header d-flex justify-content-end">
+                      <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a href="profil.html" class="link-hover nav-link text-light me-2">Mes images</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="index.html" class="nav-link text-light btn btn-danger">Déconnexion</a>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+              <div class="collapse navbar-collapse justify-content-end d-none d-md-block" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="profil.html" class="link-hover nav-link text-light me-2">Mes images</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-light btn btn-danger">Déconnexion</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+      </nav>
+    </header>
+    <main>
+        <section id="presentation" class="bg-image" style="background-image: url('img/bg-hd.jpg');min-height: 96vh;">
+            <div class="container pt-5">
+                <div class="row mb-4">
+                  <div class="col-12 col-md-6 mt-5">
+                    <div class="image-container1">
+                      <img src="https://picsum.photos/300/150?random=1" alt="chuck" class="rendu1 w-100">
+                      <div class="download1">
+                        <button class="btn btn-danger">Télécharger</button>
+                        <button class="btn btn-danger">Sauvegarder</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 mt-4 mt-md-5">
+                    <div class="image-container2">
+                      <img src="https://picsum.photos/300/150?random=2" alt="chuck" class="rendu2 w-100">
+                      <div class="download2">
+                        <button class="btn btn-danger">Télécharger</button>
+                        <button class="btn btn-danger">Sauvegarder</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-md-4">
+                      <div class="image-container3">
+                        <img src="https://picsum.photos/300/150?random=3" alt="chuck" class="rendu3 w-100">
+                        <div class="download3">
+                          <button class="btn btn-danger">Télécharger</button>
+                          <button class="btn btn-danger">Sauvegarder</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-5 mt-4 mt-md-0 mb-md-4">
+                      <div class="image-container4">
+                        <img src="https://picsum.photos/300/150?random=4" alt="chuck" class="rendu4 w-100">
+                        <div class="download4">
+                          <button class="btn btn-danger">Télécharger</button>
+                          <button class="btn btn-danger">Sauvegarder</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center mt-3">
+                    <div class="col-12 col-md-2">
+                        <button class="d-flex justify-content-center btn btn-danger mb-3">Générer à nouveau</button>
+                    </div>
+                </div>
+            </div> 
+        </section>
+    </main>
+
+    <footer class="border-top">
+        <div class="container-fluid py-2">
+          <div class="row gy-4 align-items-center">
+            <div class="col-12 col-md-4">
+                <a href="#" class="navbar-brand fw-bold text-dark">Thumbnai
+                    <span class="bg-danger bg-gradiant p-1 ms-0 text-light">IA</span>
+                </a>
+            </div>
+            <div class="col-12 col-md-4 text-md-center">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#" class="text-decoration-none text-dark">Mentions légales</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-4 text-md-end">
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none text-dark"><i class="bi bi-linkedin"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none text-dark"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none text-dark"><i class="bi bi-twitter"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous">
+        </script>
+        <script>
+          function Masquer()
+          {      
+          if (document.querySelector('.bg-image').style.filter == 'brightness(10%)')
+          document.querySelector('.bg-image').style.filter = 'none';
+          else
+          document.querySelector('.bg-image').style.filter = 'brightness(10%)';
+          };
+        </script>
+      </footer>
+</body>
+
+</html>
