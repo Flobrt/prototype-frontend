@@ -1,0 +1,42 @@
+# Projet de Front-End de mon application Thumbnail
+
+Ce projet de front-end contient les fichiers HTML, CSS et JavaScript nécessaires pour créer une application web. L'application est basée sur le langage HTML, stylisée avec CSS et utilise le framework Bootstrap pour le développement.
+
+## Pages du projet
+
+1. index.html : Page d'accueil de l'application.
+2. login.html : Page de connexion de l'application.
+3. signup.html : Page d'inscription de l'application.
+4. profil.html : Page de tableau de bord de l'application.
+5. generate.html : Page de génération de miniature de l'application.
+6. new_picture.html : Page de création de miniature de l'application.
+7. update-user.html : Page de modification de profil de l'application.
+
+## Instruction de démarrage
+
+1. Assurez-vous d'avoir un navigateur web installé sur votre machine.
+2. Clonez le projet sur votre machine.
+3. Navigateur vers le dossier du projet.
+4. Ouvrez le fichier index.html avec votre navigateur web.
+
+## Dépéndances
+
+Ce projet utilise les dépendances suivantes:
+
+- Bootstrap v5.0.2
+
+## Structure du projet
+
+- index.html
+- login.html
+- signup.html
+- profil.html
+- generate.html
+- new_picture.html
+- update-user.html
+- style.css
+- img/
+
+## Auteur
+
+BERTHELOT Florian - berthelot_florian@yahoo.fr
